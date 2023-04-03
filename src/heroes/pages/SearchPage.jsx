@@ -79,7 +79,11 @@ export const SearchPage = () => {
           </div>
 
           {getHeroes.map((hero) => (
-            <HeroCard key={hero.id} {...hero} />
+            <HeroCard
+              key={hero.id}
+              {...hero}
+              className="animate__animated animate__fadeIn"
+            />
           ))}
         </div>
       </div>
